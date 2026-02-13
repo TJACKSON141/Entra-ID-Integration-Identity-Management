@@ -1,4 +1,4 @@
-# 🔐 Project 4: Entra ID Integration & Identity Management (AZ-104 Demo)
+# 🔐 Azure Entra ID Integration & Identity Management
 
 ## 📌 Overview
 This project demonstrates how to integrate an application with Microsoft Entra ID for authentication and access control. It covers user and group management, app registration, API permissions, Conditional Access (MFA), and sign-in monitoring.
@@ -22,67 +22,47 @@ This project demonstrates how to integrate an application with Microsoft Entra I
 - Azure Portal  
 
 
-## ✅ Implementation Steps
+## 1️⃣ Create Users & Groups
 
-### 1️⃣ Create Users & Groups
-Created test users and security groups:
-- admin-104  
-- dev-104  
-- reader-104  
-
-**Screenshots:**
-- `/screenshots/entraid-users.png`  
-- `/screenshots/entraid-groups.png`  
+![Entra ID Users](./screenshots/entraid-users.png)
+![Entra ID Groups](./screenshots/entraid-groups.png)
 
 
-### 2️⃣ Register Application in Entra ID
-Registered application:  
-**az104-demo-app**
+## 2️⃣ Register Application in Entra ID
 
-**Screenshot:**  
-- `/screenshots/app-registration.png`
+**Application:** `az104-demo-app`
+
+![App Registration](./screenshots/app-registration.png)
 
 
-### 3️⃣ Configure API Permissions
+## 3️⃣ Configure API Permissions
+
 Configured Microsoft Graph permissions:
 - User.Read  
 - User.Read.All  
-Admin consent granted.
 
-**Screenshot:**  
-- `/screenshots/api-permissions.png`
+![API Permissions](./screenshots/api-permissions.png)
 
 
-### 4️⃣ Create Client Secret
-Generated client secret for application authentication.
+## 4️⃣ Create Client Secret
 
-**Screenshot:**  
-- `/screenshots/client-secret.png`
+![Client Secret](./screenshots/client-secret.png)
 
 
-### 5️⃣ Assign Users to Application
-Assigned users to Enterprise Application.
+## 5️⃣ Assign Users to Enterprise Application
 
-**Screenshot:**  
-- `/screenshots/users-assigned-enterprise-application.png`
+![Users Assigned to App](./screenshots/users-assigned-enterprise-application.png)
 
 
-### 6️⃣ Configure Conditional Access (Require MFA)
-Created Conditional Access policy:
-- Applied to specific users  
-- Targeted az104-demo-app  
-- Required Multi-Factor Authentication (MFA)
+## 6️⃣ Configure Conditional Access (Require MFA)
 
-**Screenshots:**  
-- `/screenshots/conditional-access-policy.png`  
-- `/screenshots/conditional-access-mfa.png`
+![Conditional Access Policy](./screenshots/conditional-access-policy.png)
+![Conditional Access MFA](./screenshots/conditional-access-mfa.png)
 
 
-### 7️⃣ Verify Sign-In Logs
-Validated authentication and Conditional Access enforcement.
+## 7️⃣ Verify Sign-In Logs
 
-**Screenshot:**  
-- `/screenshots/sign-in-logs.png`
+![Sign-in Logs](./screenshots/sign-in-logs.png)
 
 
 ## 🔐 Security Features Demonstrated
@@ -99,6 +79,3 @@ Validated authentication and Conditional Access enforcement.
 - Azure security fundamentals  
 - Conditional Access & MFA setup  
 - Enterprise-ready identity design  
-
-- https://learn.microsoft.com/entra  
-- https://learn.microsoft.com/azure/active-directory  
